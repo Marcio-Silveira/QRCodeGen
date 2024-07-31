@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="#C6E4FB"
+    tools:context=".DadosActivity">
+
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="77dp"
+        android:backgroundTint="#0B04FA"
+        android:text="CALCULAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate1" />
+
+    <EditText
+        android:id="@+id/textSalarioInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="00.000,00"
+        android:textColor="#818080"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSalario2"
+        app:layout_constraintStart_toStartOf="@+id/textViewSalario1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSalario1" />
+
+    <TextView
+        android:id="@+id/textViewSalario1"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="77dp"
+        android:text="Insira seu 1º Salário"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textSalarioInicial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textSalarioFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="00.000,00"
+        android:textColor="#818080"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/textViewData1"
+        app:layout_constraintStart_toStartOf="@+id/textViewSalario2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSalario2" />
+
+    <TextView
+        android:id="@+id/textViewSalario2"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:text="Insira seu ultimo Salário"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textSalarioFinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSalarioInicial" />
+
+    <TextView
+        android:id="@+id/textViewData1"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:text="Data do início do contrato"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSalarioFinal" />
+
+    <TextView
+        android:id="@+id/textViewData2"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:text="Data do fim do contrato"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="dd/mm/aaaa"
+        android:textColor="#8A8888"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/textViewData2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewData1" />
+
+    <EditText
+        android:id="@+id/editTextDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="126dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="dd/mm/aaaa"
+        android:textColor="#8A8888"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btCalcular"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewData2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
